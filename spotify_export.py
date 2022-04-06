@@ -46,7 +46,7 @@ for playlist in playlists:
             album=sp.album( track['album']['uri'] )
             writer.writerow([
                 track_id,
-                track['artists'][0]['name'],
+                ' '.join([artists['name'] for artists in track['artists']]),
                 track['name'],
                 album['name'],
                 album['release_date']
