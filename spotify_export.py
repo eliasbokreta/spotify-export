@@ -1,5 +1,5 @@
 from spotipy.oauth2 import SpotifyOAuth
-import spotipy
+from spotipy import Spotify
 import os
 import csv
 from datetime import datetime
@@ -10,7 +10,7 @@ os.environ['SPOTIPY_CLIENT_SECRET'] = ""
 os.environ['SPOTIPY_REDIRECT_URI'] = ""
 
 scope = "playlist-read-private user-read-private"
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope, open_browser=False))
+sp = Spotify(auth_manager=SpotifyOAuth(scope=scope, open_browser=False))
 
 current_user = sp.current_user()
 
