@@ -1,5 +1,5 @@
 # spotify-export
-Simple tool to export user's Spotify playlists to simple CSV files.
+Simple tool to export user's Spotify playlists to CSV files.
 
 # Requirements
 - Create an API key from the [Spotify developers portal](https://developer.spotify.com/) with scopes :
